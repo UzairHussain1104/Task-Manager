@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 15vh; /* Increased height for better spacing */
+    background: rgb(76, 119, 112);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+
+
+.SignLogContainer{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    margin: 0;
+}
+
+
+/* Container for both Sign and Login */
+.SignLog {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Headings */
+.SignLog h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Labels and Inputs */
+.SignLog label {
+    width: 100%;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+.SignLog input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.SignLog input:focus {
+    border-color: #4c8370;
+    outline: none;
+}
+
+/* Buttons */
+.SignLog button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4c8370;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.SignLog button:hover {
+    background-color: #3d6f5f;
+}
+
+/* Bottom Text */
+.SignLog p {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.SignLog span {
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.SignLog span:hover {
+    color: #0056b3;
+}
+
+/* Error Message */
+.errorMessage {
+    text-align: center;
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 20px;
+}

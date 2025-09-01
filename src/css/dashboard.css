@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    width: 100%;
+    height: 15vh; /* Increased height for better spacing */
+    background: rgb(76, 119, 112);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Task Section */
+.tasks_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Task Container */
+
+
+.tasks_container {
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    align-items: start;
+}
+
+/* Task Cards */
+.task {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+
+.task:hover {
+    transform: scale(1.02);
+}
+
+.task_metaContainer{
+    gap: 5px;
+}
+
+.task_priority{
+    padding: 3px 6px;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.task_date{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color:blue;
+    padding: 20px;
+}
+
+.task_title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+
+.task_description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: -webkit-box;         /* Required for the line-clamp feature */
+    -webkit-box-orient: vertical;      
+    -webkit-line-clamp: 3;          /* Limits the text to 3 lines */
+    overflow: hidden;                  
+    text-overflow: ellipsis;   
+    color: #555;
+}
+
+.task_updateLink {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.task_update:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .topBar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        padding-top: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
